@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        //AppBar
         appBar: AppBar(
           backgroundColor: Colors.lightBlue.shade50,
           leading: Icon(
@@ -27,15 +28,20 @@ class HomePage extends StatelessWidget {
               TextSpan(text: 'Eats', style: TextStyle(color: Colors.orange))
             ]),
           ),
+
+          //TapBar
           bottom: TabBar(
               dividerColor: Colors.transparent,
-              indicatorColor: Colors.orange,
+              indicatorColor: Colors.deepOrange,
               tabs: [
                 Tab(text: 'Comida'),
                 Tab(text: 'Locales'),
               ]),
         ),
+
+        //Body
         body: Container(
+          padding: EdgeInsets.only(top: 10),
           color: Colors.lightBlue.shade50,
           child: TabBarView(children: [TabComida(), TabLocales()]),
         ),

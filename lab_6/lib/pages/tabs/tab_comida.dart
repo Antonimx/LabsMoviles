@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lab_6/datos/productos.dart';
+import 'package:lab_6/widgets/producto_widget.dart';
 
 class TabComida extends StatelessWidget {
   const TabComida({super.key});
@@ -7,25 +8,18 @@ class TabComida extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(30), topRight: Radius.circular(30)),
           color: Colors.white),
+
+      //ListView
       child: ListView.separated(
         separatorBuilder: (_, __) => Divider(),
         itemCount: productos.length,
         itemBuilder: (context, index) {
-          var producto = productos[index];
-          return ListTile(
-            leading: Container(
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.orange)),
-              padding: EdgeInsets.all(5),
-              child: Image(
-                  image:
-                      AssetImage('assets/images/comida/${producto['imagen']}')),
-            ),
-          );
+          return ProductoWidget(producto: productos[index]);
         },
       ),
     );
