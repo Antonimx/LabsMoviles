@@ -1,26 +1,146 @@
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 List empresas = [
-  {"nombre": "BlueStar TA-BIGITech Israel", "icono": MdiIcons.devices, "sector": "Technology", "mercado": "NASDAQ", "simbolo": "ITEQ"},
-  {"nombre": "ING Group, N.V.", "icono": MdiIcons.bank, "sector": "Commercial Banks", "mercado": "NYSE", "simbolo": "ISG"},
-  {"nombre": "Aceto Corp.", "icono": MdiIcons.needle, "sector": "Pharmaceuticals", "mercado": "NASDAQ", "simbolo": "ACET"},
-  {"nombre": "Goldman Sachs BDC, Inc.", "icono": MdiIcons.finance, "sector": "Finance", "mercado": "NYSE", "simbolo": "GSBD"},
-  {"nombre": "NCS Multistage Holdings, Inc.", "icono": MdiIcons.homeGroup, "sector": "Real State", "mercado": "NASDAQ", "simbolo": "NCSM"},
-  {"nombre": "ADTRAN, Inc.", "icono": MdiIcons.wan, "sector": "Telecommunications Equipment", "mercado": "NASDAQ", "simbolo": "ADTN"},
-  {"nombre": "PriceSmart, Inc.", "icono": MdiIcons.cart, "sector": "Department/Specialty Retail Stores", "mercado": "NASDAQ", "simbolo": "PSMT"},
-  {"nombre": "Vista Outdoor Inc.", "icono": MdiIcons.city, "sector": "Ordnance And Accessories", "mercado": "NYSE", "simbolo": "VSTO"},
-  {"nombre": "Bio-Techne Corp", "icono": MdiIcons.bio, "sector": "Biotechnology: Biological Products (No Diagnostic Substances)", "mercado": "NASDAQ", "simbolo": "TECH"},
-  {"nombre": "Avenue Therapeutics, Inc.", "icono": MdiIcons.hospital, "sector": "Healthcare", "mercado": "NASDAQ", "simbolo": "ATXI"},
-  {"nombre": "RXi Pharmaceuticals Corp.", "icono": MdiIcons.needle, "sector": "Major Pharmaceuticals", "mercado": "NASDAQ", "simbolo": "RXIIW"},
-  {"nombre": "Albany International Corp.", "icono": MdiIcons.hanger, "sector": "Textiles", "mercado": "NYSE", "simbolo": "AIN"},
-  {"nombre": "BRT Apartments Corp.", "icono": MdiIcons.homeGroup, "sector": "Real Estate Investment Trusts", "mercado": "NYSE", "simbolo": "BRT"},
-  {"nombre": "Harvest Capital Credit Corp.", "icono": MdiIcons.finance, "sector": "Finance", "mercado": "NASDAQ", "simbolo": "HCAPL"},
-  {"nombre": "CIM Commercial Trust Corp.", "icono": MdiIcons.homeGroup, "sector": "Real Estate Investment Trusts", "mercado": "NASDAQ", "simbolo": "CMCT"},
-  {"nombre": "ACI Worldwide, Inc.", "icono": MdiIcons.codeBracesBox, "sector": "Computer Software: Prepackaged Software", "mercado": "NASDAQ", "simbolo": "ACIW"},
-  {"nombre": "Omega Flex, Inc.", "icono": MdiIcons.factoryIcon, "sector": "Industrial Specialties", "mercado": "NASDAQ", "simbolo": "OFLX"},
-  {"nombre": "State Street Corp.", "icono": MdiIcons.homeGroup, "sector": "Real State", "mercado": "NYSE", "simbolo": "STT^G"},
-  {"nombre": "Navios Maritime Partners LP", "icono": MdiIcons.ferry, "sector": "Marine Transportation", "mercado": "NYSE", "simbolo": "NMM"},
-  {"nombre": "Yahoo! Inc.", "icono": MdiIcons.web, "sector": "EDP Services", "mercado": "NASDAQ", "simbolo": "YHOO"}
+  {
+    "nombre": "BlueStar TA-BIGITech Israel",
+    "icono": MdiIcons.devices,
+    "sector": "Technology",
+    "mercado": "NASDAQ",
+    "simbolo": "ITEQ"
+  },
+  {
+    "nombre": "ING Group, N.V.",
+    "icono": MdiIcons.bank,
+    "sector": "Commercial Banks",
+    "mercado": "NYSE",
+    "simbolo": "ISG"
+  },
+  {
+    "nombre": "Aceto Corp.",
+    "icono": MdiIcons.needle,
+    "sector": "Pharmaceuticals",
+    "mercado": "NASDAQ",
+    "simbolo": "ACET"
+  },
+  {
+    "nombre": "Goldman Sachs BDC, Inc.",
+    "icono": MdiIcons.finance,
+    "sector": "Finance",
+    "mercado": "NYSE",
+    "simbolo": "GSBD"
+  },
+  {
+    "nombre": "NCS Multistage Holdings, Inc.",
+    "icono": MdiIcons.homeGroup,
+    "sector": "Real State",
+    "mercado": "NASDAQ",
+    "simbolo": "NCSM"
+  },
+  {
+    "nombre": "ADTRAN, Inc.",
+    "icono": MdiIcons.wan,
+    "sector": "Telecommunications Equipment",
+    "mercado": "NASDAQ",
+    "simbolo": "ADTN"
+  },
+  {
+    "nombre": "PriceSmart, Inc.",
+    "icono": MdiIcons.cart,
+    "sector": "Department/Specialty Retail Stores",
+    "mercado": "NASDAQ",
+    "simbolo": "PSMT"
+  },
+  {
+    "nombre": "Vista Outdoor Inc.",
+    "icono": MdiIcons.city,
+    "sector": "Ordnance And Accessories",
+    "mercado": "NYSE",
+    "simbolo": "VSTO"
+  },
+  {
+    "nombre": "Bio-Techne Corp",
+    "icono": MdiIcons.bio,
+    "sector": "Biotechnology: Biological Products (No Diagnostic Substances)",
+    "mercado": "NASDAQ",
+    "simbolo": "TECH"
+  },
+  {
+    "nombre": "Avenue Therapeutics, Inc.",
+    "icono": MdiIcons.hospital,
+    "sector": "Healthcare",
+    "mercado": "NASDAQ",
+    "simbolo": "ATXI"
+  },
+  {
+    "nombre": "RXi Pharmaceuticals Corp.",
+    "icono": MdiIcons.needle,
+    "sector": "Major Pharmaceuticals",
+    "mercado": "NASDAQ",
+    "simbolo": "RXIIW"
+  },
+  {
+    "nombre": "Albany International Corp.",
+    "icono": MdiIcons.hanger,
+    "sector": "Textiles",
+    "mercado": "NYSE",
+    "simbolo": "AIN"
+  },
+  {
+    "nombre": "BRT Apartments Corp.",
+    "icono": MdiIcons.homeGroup,
+    "sector": "Real Estate Investment Trusts",
+    "mercado": "NYSE",
+    "simbolo": "BRT"
+  },
+  {
+    "nombre": "Harvest Capital Credit Corp.",
+    "icono": MdiIcons.finance,
+    "sector": "Finance",
+    "mercado": "NASDAQ",
+    "simbolo": "HCAPL"
+  },
+  {
+    "nombre": "CIM Commercial Trust Corp.",
+    "icono": MdiIcons.homeGroup,
+    "sector": "Real Estate Investment Trusts",
+    "mercado": "NASDAQ",
+    "simbolo": "CMCT"
+  },
+  {
+    "nombre": "ACI Worldwide, Inc.",
+    "icono": MdiIcons.codeBracesBox,
+    "sector": "Computer Software: Prepackaged Software",
+    "mercado": "NASDAQ",
+    "simbolo": "ACIW"
+  },
+  {
+    "nombre": "Omega Flex, Inc.",
+    "icono": MdiIcons.factoryIcon,
+    "sector": "Industrial Specialties",
+    "mercado": "NASDAQ",
+    "simbolo": "OFLX"
+  },
+  {
+    "nombre": "State Street Corp.",
+    "icono": MdiIcons.homeGroup,
+    "sector": "Real State",
+    "mercado": "NYSE",
+    "simbolo": "STT^G"
+  },
+  {
+    "nombre": "Navios Maritime Partners LP",
+    "icono": MdiIcons.ferry,
+    "sector": "Marine Transportation",
+    "mercado": "NYSE",
+    "simbolo": "NMM"
+  },
+  {
+    "nombre": "Yahoo! Inc.",
+    "icono": MdiIcons.web,
+    "sector": "EDP Services",
+    "mercado": "NASDAQ",
+    "simbolo": "YHOO"
+  }
 ];
 
 List monedas = [
@@ -38,7 +158,11 @@ List monedas = [
   {"codigo": "NOK", "nombre": "Corona noruega", "valor": "86,51"},
   {"codigo": "SEK", "nombre": "Corona sueca", "valor": "89,76"},
   {"codigo": "DEG", "nombre": "DEG", "valor": "1243,92"},
-  {"codigo": "AED", "nombre": "Dirham de Emiratos Arabes Unidos", "valor": "252,24"},
+  {
+    "codigo": "AED",
+    "nombre": "Dirham de Emiratos Arabes Unidos",
+    "valor": "252,24"
+  },
   {"codigo": "MAD", "nombre": "Dirham Marroqui", "valor": "94,89"},
   {"codigo": "AUD", "nombre": "Dolar australiano", "valor": "621,67"},
   {"codigo": "CAD", "nombre": "Dolar canadiense", "valor": "683,51"},
@@ -52,7 +176,11 @@ List monedas = [
   {"codigo": "TWD", "nombre": "Dolar taiwanes", "valor": "28,89"},
   {"codigo": "EUR", "nombre": "Euro", "valor": "1021,87"},
   {"codigo": "HUF", "nombre": "Forint hungaro", "valor": "2,59"},
-  {"codigo": "XPF", "nombre": "Franco de la Polinesia Francesa", "valor": "8,59"},
+  {
+    "codigo": "XPF",
+    "nombre": "Franco de la Polinesia Francesa",
+    "valor": "8,59"
+  },
   {"codigo": "CHF", "nombre": "Franco suizo", "valor": "1088,77"},
   {"codigo": "PYG", "nombre": "Guarani  paraguayo", "valor": "0,12"},
   {"codigo": "UAH", "nombre": "Hryvnia ucraniano", "valor": "22,45"},
@@ -85,4 +213,35 @@ List monedas = [
   {"codigo": "JPY", "nombre": "Yen", "valor": "6,35"},
   {"codigo": "CNY", "nombre": "Yuan", "valor": "129,98"},
   {"codigo": "PLN", "nombre": "Zloty polaco", "valor": "238,76"}
+];
+
+List productos = [
+  {
+    "imagen": "assets/images/productos/beans.jpg",
+    "descripcion": "Beans - asdasd"
+  },
+  {
+    "imagen": "assets/images/productos/cheese.jpg",
+    "descripcion": "Cheese - Brick With Onion"
+  },
+  {
+    "imagen": "assets/images/productos/cherries.jpg",
+    "descripcion": "Cherries - adasdasd"
+  },
+  {
+    "imagen": "assets/images/productos/grapes.jpg",
+    "descripcion": "Grapes - aaaaa"
+  },
+  {
+    "imagen": "assets/images/productos/pineapple.jpg",
+    "descripcion": "Pineapple - bbbbb"
+  },
+  {
+    "imagen": "assets/images/productos/salmon.jpg",
+    "descripcion": "Salmon - Atlantic, SkinOn"
+  },
+  {
+    "imagen": "assets/images/productos/sugar.jpg",
+    "descripcion": "Sugar - Crumb"
+  },
 ];
