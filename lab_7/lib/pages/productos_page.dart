@@ -6,23 +6,30 @@ class ProductosPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Expanded(
-        child: ListView.builder(
-          itemCount: productos.length,
-          itemBuilder: (context, index) {
-            var producto = productos[index];
-            return Container(
-              height: double.infinity,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      fit: BoxFit.fitWidth,
-                      image: AssetImage(producto['imagen']))),
-              child: Text(producto['descripcion']),
-            );
-          },
-        ),
-      ),
+    return ListView.builder(
+      itemCount: productos.length,
+      itemBuilder: (context, index) {
+        var producto = productos[index];
+        return Container(
+          height: 130,
+          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.fitWidth, image: AssetImage(producto['imagen']))),
+          child: Container(
+            margin: EdgeInsets.only(top: 100),
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.5),
+            ),
+            padding: EdgeInsets.all(5),
+            alignment: Alignment.bottomLeft,
+            child: Text(
+              producto['descripcion'],
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        );
+      },
     );
   }
 }
